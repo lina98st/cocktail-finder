@@ -35,3 +35,14 @@ This project uses the [TheCocktailDB API](https://www.thecocktaildb.com/api.php)
 ## Project Status
 
 Currently in development as part of the Nucamp React course module.
+
+## Roadmap
+
+- [x] Project setup
+- [x] Component structure
+- [ ] API integration
+- [ ] Search functionality
+- [ ] Filter options
+- [ ] Random cocktail feature
+- [ ] Detail view
+- [ ] Deployment
