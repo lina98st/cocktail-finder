@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { COCKTAILS } from './shared/COCKTAILS';
+import CocktailList from './components/CocktailList';
 import './App.css';
 
 
@@ -26,6 +27,7 @@ async function fetchCocktail() {
   return (
     <div className="App">
       <h1>CocktailFinder</h1>
+      <CocktailList cocktails={cocktails} />
     </div>
   );
 }
