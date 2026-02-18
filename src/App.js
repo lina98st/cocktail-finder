@@ -9,7 +9,7 @@ function App() {
   const [cocktails, setCocktails] = useState(COCKTAILS);
 
   useEffect(() => {
-    fetchCocktail();
+  fetchCocktail();
   }, []);
 
 async function fetchCocktail() {

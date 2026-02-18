@@ -28,7 +28,7 @@ export const COCKTAILS = [
   {
     idDrink: "3",
     strDrink: "Pina Colada",
-    strDrinkThumb: "https://www.thecocktaildb.com/images/media/drink/cpf4j51504348579.jpg",
+strDrinkThumb: "https://www.thecocktaildb.com/images/media/drink/upusyu1472667977.jpg",
     strCategory: "Cocktail",
     strAlcoholic: "Alcoholic",
     strGlass: "Hurricane glass",
