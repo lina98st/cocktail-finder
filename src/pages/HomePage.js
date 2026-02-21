@@ -24,7 +24,6 @@ async function fetchCocktail() {
     
     return (
         <> 
-                      <h1>CocktailFinder</h1>
               <CocktailList cocktails={cocktails} />
         </>
     )
