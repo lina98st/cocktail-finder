@@ -1,33 +1,21 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { COCKTAILS } from './shared/COCKTAILS';
-import CocktailList from './components/CocktailList';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
-
+import HomePage from './pages/HomePage';
+import CocktailDetailPage from './pages/CocktailDetailPage';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
-  const [cocktails, setCocktails] = useState(COCKTAILS);
-
-  useEffect(() => {
-  fetchCocktail();
-  }, []);
-
-async function fetchCocktail() {
-  try {
-    let response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
-    let data = await response.json();
-    console.log(data);
-    setCocktails(data.drinks);
-    } catch (error) {
-    console.error('There was an error', error)
-  }
-}
 
 
   return (
     <div className="App">
-      <h1>CocktailFinder</h1>
-      <CocktailList cocktails={cocktails} />
+                  <Header />
+            <Routes>
+                <Route path='/' element={<HomePage />} />
+                <Route path='contact' element={<CocktailDetailPage />} />
+                            </Routes>
+            <Footer />
     </div>
   );
 }
