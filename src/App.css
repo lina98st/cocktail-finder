@@ -91,7 +91,7 @@ font-size: 4rem !important;
   margin-top: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  width: 100%;
+  width: auto;
 }
 
 .cocktail-card button:hover {
@@ -154,6 +154,12 @@ font-size: 4rem !important;
 .back-button:hover {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
   transform: translateY(-2px);
+}
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .ingredients-title {

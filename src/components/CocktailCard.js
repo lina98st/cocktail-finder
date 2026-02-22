@@ -6,11 +6,12 @@ const CocktailCard = ({ cocktail, deleteCocktail }) => {
       <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
       <h3>{cocktail.strDrink}</h3>
       <p>{cocktail.strCategory}</p>
-
+<div className="card-buttons">
       <Link to={`/cocktail/${cocktail.idDrink}`}>
         <button>Details</button>
       </Link>
        <button className='deleteButton' onClick={() => deleteCocktail(cocktail.idDrink)}>Delete</button>
+    </div>
     </div>
   );
 };
