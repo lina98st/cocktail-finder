@@ -8,21 +8,18 @@ const CocktailDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  // eslint-disable-next-line
-  useEffect(() => {
-  fetchDetailOfCocktail();
-  }, [id]);
-
-async function fetchDetailOfCocktail() {
-  try {
-    let response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
-    let data = await response.json();
-    console.log(data);
-   setCocktail(data.drinks[0]);
+useEffect(() => {
+  async function fetchDetailOfCocktail() {
+    try {
+      let response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);
+      let data = await response.json();
+      setCocktail(data.drinks[0]);
     } catch (error) {
-    console.error('There was an error', error)
+      console.error('There was an error', error);
+    }
   }
-}
+  fetchDetailOfCocktail();
+}, [id]);
 
 const ingredients = [];
 for (let i = 1; i <= 15; i++) {
