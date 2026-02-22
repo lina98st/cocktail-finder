@@ -21,9 +21,12 @@ async function fetchDetailOfCocktail() {
   }
 }
 
-
-
-
+const ingredients = [];
+for (let i = 1; i <= 15; i++) {
+  if (cocktail?.[`strIngredient${i}`]) {
+    ingredients.push(cocktail[`strIngredient${i}`]);
+  }
+}
 
 
     return (
@@ -31,11 +34,12 @@ async function fetchDetailOfCocktail() {
 <div className="row">
     <h2>{cocktail?.strDrink}</h2>
   <div className="col-md-6">
-    {/* Zutaten hier */}
-    
+  {ingredients.map((ingredient) => ( 
+<p key={ingredient}>{ingredient}</p>
+))}
   </div>
   <div className="col-md-6">
-    {/* Anleitung hier */}
+{cocktail?.strInstructions}
   </div>
 </div>
 </>
