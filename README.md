@@ -1,5 +1,7 @@
 # CocktailFinder
 
+🍹 **Live Demo:** [https://cocktailfinder-alina.netlify.app](https://cocktailfinder-alina.netlify.app)
+
 ![CocktailFinder Screenshot](screenshot.png)
 
 ## About
@@ -18,6 +20,7 @@ CocktailFinder is a cocktail discovery app built with React as part of the Nucam
 
 - React
 - React Router
+- Formik
 - TheCocktailDB API
 - Bootstrap
 - JavaScript
@@ -32,3 +35,7 @@ CocktailFinder is a cocktail discovery app built with React as part of the Nucam
 ## API
 
 This project uses the [TheCocktailDB API](https://www.thecocktaildb.com/api.php).
+
+## Author
+
+Built by Alina Schmidt as part of the Nucamp React Course.
