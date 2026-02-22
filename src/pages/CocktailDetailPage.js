@@ -36,23 +36,19 @@ for (let i = 1; i <= 15; i++) {
 <div className="detail-card">
   <div className="row">
     <div className="col-md-6">
-    <img src={cocktail?.strDrinkThumb} alt={cocktail?.strDrink} />
-
+      <img src={cocktail?.strDrinkThumb} alt={cocktail?.strDrink} />
+<p>{cocktail?.strInstructions}</p>
     </div>
     <div className="col-md-6">
-        <button className='back-button' onClick={() => navigate(-1)}>Back</button>
-            <h2>{cocktail?.strDrink}</h2>
-
-                <h3 className="ingredients-title">Ingredients</h3>
-  {ingredients.map((ingredient) => ( 
-<p key={ingredient}>{ingredient}</p>
-))}
-  </div>
-  <div className="col-md-6">
-{cocktail?.strInstructions}
+      <button className='back-button' onClick={() => navigate(-1)}>Back</button>
+      <h2>{cocktail?.strDrink}</h2>
+      <h3 className="ingredients-title">Ingredients</h3>
+      {ingredients.map((ingredient) => (
+        <p key={ingredient}>{ingredient}</p>
+      ))}
+    </div>
   </div>
 </div>
-  </div>
 </>
     );
 }
