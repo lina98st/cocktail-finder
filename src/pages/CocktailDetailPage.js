@@ -1,10 +1,12 @@
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const CocktailDetailPage = () => {
 
  const [cocktail, setCocktail] = useState(null);
   const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
   fetchDetailOfCocktail();
@@ -38,7 +40,9 @@ for (let i = 1; i <= 15; i++) {
 
     </div>
     <div className="col-md-6">
+        <button className='back-button' onClick={() => navigate(-1)}>Back</button>
             <h2>{cocktail?.strDrink}</h2>
+
                 <p>Ingredients</p>
   {ingredients.map((ingredient) => ( 
 <p key={ingredient}>{ingredient}</p>

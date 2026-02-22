@@ -130,3 +130,19 @@ h1 {
   padding: 20px;
   color: #7c3aed;
 }
+
+.back-button {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
