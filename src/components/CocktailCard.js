@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const CocktailCard = ({ cocktail }) => {
+const CocktailCard = ({ cocktail, deleteCocktail }) => {
   return (
     <div className="cocktail-card">
       <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
@@ -10,7 +10,7 @@ const CocktailCard = ({ cocktail }) => {
       <Link to={`/cocktail/${cocktail.idDrink}`}>
         <button>Details</button>
       </Link>
-       <button className='deleteButton'>Delete</button>
+       <button className='deleteButton' onClick={() => deleteCocktail(cocktail.idDrink)}>Delete</button>
     </div>
   );
 };

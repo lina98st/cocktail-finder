@@ -28,7 +28,7 @@ const deleteCocktail = (id) => {
     
     return (
         <> 
-              <CocktailList cocktails={cocktails} />
+              <CocktailList cocktails={cocktails} deleteCocktail={deleteCocktail}/>
         </>
     )
 }
