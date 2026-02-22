@@ -8,6 +8,7 @@ const CocktailDetailPage = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
+  // eslint-disable-next-line
   useEffect(() => {
   fetchDetailOfCocktail();
   }, [id]);
