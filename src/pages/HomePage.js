@@ -25,12 +25,25 @@ const deleteCocktail = (id) => {
   setCocktails(cocktails.filter((cocktail) => cocktail.idDrink !== id))
 }
 
-    
-    return (
-        <> 
-              <CocktailList cocktails={cocktails} deleteCocktail={deleteCocktail}/>
-        </>
-    )
+
+async function fetchRandomCocktail() {
+  try {
+    let response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+    let data = await response.json();
+    console.log(data);
+  setCocktails([data.drinks[0], ...cocktails].slice(0, 6))
+    } catch (error) {
+    console.error('There was an error', error)
+  }
+}
+
+
+return (
+  <> 
+    <button className='surpriseButton' onClick={() => fetchRandomCocktail()}>Surprise Cocktail</button>
+    <CocktailList cocktails={cocktails} deleteCocktail={deleteCocktail}/>
+  </>
+)
 }
 
 export default HomePage;
