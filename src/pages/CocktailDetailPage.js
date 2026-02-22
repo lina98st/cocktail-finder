@@ -43,7 +43,7 @@ for (let i = 1; i <= 15; i++) {
         <button className='back-button' onClick={() => navigate(-1)}>Back</button>
             <h2>{cocktail?.strDrink}</h2>
 
-                <p>Ingredients</p>
+                <h3 className="ingredients-title">Ingredients</h3>
   {ingredients.map((ingredient) => ( 
 <p key={ingredient}>{ingredient}</p>
 ))}

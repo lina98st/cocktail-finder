@@ -146,3 +146,14 @@ h1 {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
   transform: translateY(-2px);
 }
+
+.ingredients-title {
+  font-size: 1.3rem;
+  color: #4a1d96;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #a855f7;
+  padding-bottom: 5px;
+}
