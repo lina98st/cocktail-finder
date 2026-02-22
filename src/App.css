@@ -94,3 +94,9 @@ h1 {
 .cocktail-card a {
   text-decoration: none;
 }
+
+.detail-card img {
+  width: 300px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}

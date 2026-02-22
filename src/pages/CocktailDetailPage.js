@@ -31,7 +31,8 @@ for (let i = 1; i <= 15; i++) {
 
     return (
 <>
-<div className="row">
+<div className="detail-card">
+    <img src={cocktail?.strDrinkThumb} alt={cocktail?.strDrink} />
     <h2>{cocktail?.strDrink}</h2>
   <div className="col-md-6">
   {ingredients.map((ingredient) => ( 
