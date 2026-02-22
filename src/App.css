@@ -72,3 +72,25 @@ h1 {
   color: #7c3aed;
   font-size: 0.9rem;
 }
+
+.cocktail-card button {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  margin-top: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.cocktail-card button:hover {
+  background: linear-gradient(135deg, #7c3aed, #6d28d9);
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}
+
+.cocktail-card a {
+  text-decoration: none;
+}
