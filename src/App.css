@@ -124,3 +124,9 @@ h1 {
 .detail-card p {
   color: #7c3aed;
 }
+
+.Footer {
+  text-align: center;
+  padding: 20px;
+  color: #7c3aed;
+}
