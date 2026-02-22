@@ -196,3 +196,50 @@ font-size: 4rem !important;
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
   transform: translateY(-2px);
 }
+
+.login-button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #4a1d96;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-button {
+  background: rgba(139, 92, 246, 0.4);
+  border: 1px solid #7c3aed;
+}
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-avatar:hover {
+  box-shadow: 0 0 15px rgba(167, 139, 250, 0.6);
+  transform: scale(1.1);
+}
+
+.modal-submit-button {
+  background: linear-gradient(135deg, #a855f7, #7c3aed);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: auto;
+  margin-top: 10px;
+}
+
+.modal-submit-button:hover {
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+  transform: translateY(-2px);
+}

@@ -55,7 +55,7 @@ const UserLoginForm = () => {
                                             {(msg) => <p className="text-danger">{msg}</p>}
                                         </ErrorMessage>
                                     </div>
-                                    <button type="submit">Login</button>
+                                    <button className="modal-submit-button" type="submit">Sign In</button>
                                 </Form>
                             </Formik>
                         </div>
