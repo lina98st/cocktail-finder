@@ -8,7 +8,7 @@ const CocktailDetailPage = () => {
 
   useEffect(() => {
   fetchDetailOfCocktail();
-  }, []);
+  }, [id]);
 
 async function fetchDetailOfCocktail() {
   try {
@@ -28,6 +28,16 @@ async function fetchDetailOfCocktail() {
 
     return (
 <>
+<div className="row">
+    <h2>{cocktail?.strDrink}</h2>
+  <div className="col-md-6">
+    {/* Zutaten hier */}
+    
+  </div>
+  <div className="col-md-6">
+    {/* Anleitung hier */}
+  </div>
+</div>
 </>
     );
 }
