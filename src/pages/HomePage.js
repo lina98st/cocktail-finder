@@ -21,6 +21,10 @@ async function fetchCocktail() {
   }
 }
 
+const deleteCocktail = (id) => {
+  setCocktails(cocktails.filter((cocktail) => cocktail.idDrink !== id))
+}
+
     
     return (
         <> 

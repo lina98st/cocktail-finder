@@ -10,6 +10,7 @@ const CocktailCard = ({ cocktail }) => {
       <Link to={`/cocktail/${cocktail.idDrink}`}>
         <button>Details</button>
       </Link>
+       <button className='deleteButton'>Delete</button>
     </div>
   );
 };
