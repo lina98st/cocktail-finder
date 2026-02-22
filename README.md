@@ -1,22 +1,23 @@
 # CocktailFinder
 
-A cocktail discovery application built with React that helps users search for drinks, explore different categories, and discover new cocktail recipes.
+![CocktailFinder Screenshot](screenshot.png)
 
-## About This Project
+## About
 
-This project is part of my React course portfolio for the Nucamp Coding Bootcamp. It demonstrates core React concepts including component-based architecture, state management, API integration, and responsive design.
+CocktailFinder is a cocktail discovery app built with React as part of the Nucamp Coding Bootcamp portfolio. Users can explore cocktails, view detailed recipes and discover new drinks.
 
 ## Features
 
-- Search cocktails by name
-- Filter drinks by categories
-- Random cocktail generator
-- Detailed recipe views with ingredients and instructions
-- Responsive design using Bootstrap
+- Browse 6 cocktails on the homepage
+- Surprise Me button for random cocktails
+- Detail view with ingredients and instructions
+- Delete cocktails you don't like
+- Elegant pastel design with smooth animations
 
-## Technologies Used
+## Technologies
 
 - React
+- React Router
 - TheCocktailDB API
 - Bootstrap
 - JavaScript
@@ -24,25 +25,10 @@ This project is part of my React course portfolio for the Nucamp Coding Bootcamp
 ## Installation
 
 1. Clone the repository
-2. Run `npm install` to install dependencies
-3. Run `npm start` to start the development server
-4. Open [http://localhost:3000](http://localhost:3000) to view it in your browser
+2. Run `npm install`
+3. Run `npm start`
+4. Open [http://localhost:3000](http://localhost:3000)
 
 ## API
 
-This project uses the [TheCocktailDB API](https://www.thecocktaildb.com/api.php) to fetch cocktail data.
-
-## Project Status
-
-Currently in development as part of the Nucamp React course module.
-
-## Roadmap
-
-- [x] Project setup
-- [x] Component structure
-- [ ] API integration
-- [ ] Search functionality
-- [ ] Filter options
-- [ ] Random cocktail feature
-- [ ] Detail view
-- [ ] Deployment
+This project uses the [TheCocktailDB API](https://www.thecocktaildb.com/api.php).
