@@ -32,9 +32,14 @@ for (let i = 1; i <= 15; i++) {
     return (
 <>
 <div className="detail-card">
+  <div className="row">
+    <div className="col-md-6">
     <img src={cocktail?.strDrinkThumb} alt={cocktail?.strDrink} />
-    <h2>{cocktail?.strDrink}</h2>
-  <div className="col-md-6">
+
+    </div>
+    <div className="col-md-6">
+            <h2>{cocktail?.strDrink}</h2>
+                <p>Ingredients</p>
   {ingredients.map((ingredient) => ( 
 <p key={ingredient}>{ingredient}</p>
 ))}
@@ -43,6 +48,7 @@ for (let i = 1; i <= 15; i++) {
 {cocktail?.strInstructions}
   </div>
 </div>
+  </div>
 </>
     );
 }
