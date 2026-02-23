@@ -6,15 +6,19 @@
 
 ## About
 
-CocktailFinder is a cocktail discovery app built with React as part of the Nucamp Coding Bootcamp portfolio. Users can explore cocktails, view detailed recipes and discover new drinks.
+CocktailFinder is a cocktail discovery app built with React. It helps you explore the world of cocktails, find new drinks to try and learn how to make them. Whether you are looking for something classic or want to be surprised, CocktailFinder has you covered.
+
+On the homepage you see 6 cocktails. You can click on any card to see the full recipe with ingredients and preparation instructions. Not a fan of a cocktail? Just delete it. Want to discover something new? Hit the Surprise Me button and a new random cocktail will appear.
 
 ## Features
 
 - Browse 6 cocktails on the homepage
-- Surprise Me button for random cocktails
-- Detail view with ingredients and instructions
+- Surprise Me button to discover a random cocktail
+- Detail view with ingredients and preparation instructions
 - Delete cocktails you don't like
-- Elegant pastel design with smooth animations
+- Login form with validation
+- Elegant pastel design with smooth animations and glassmorphism cards
+- Responsive layout
 
 ## Technologies
 
