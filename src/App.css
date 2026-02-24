@@ -1,6 +1,7 @@
+/* Custom font import */
 @font-face {
   font-family: 'Pinyon Script';
-src: url('./fonts/Pinyon_Script/PinyonScript-Regular.ttf');
+  src: url('./fonts/Pinyon_Script/PinyonScript-Regular.ttf');
 }
 
 body {
@@ -11,7 +12,6 @@ body {
   color: #4a1d96;
   font-family: 'Arial', sans-serif;
 }
-
 
 @keyframes gradient {
   0% { background-position: 0% 50%; }
@@ -29,13 +29,14 @@ h1 {
   text-align: center;
   font-family: 'Pinyon Script', cursive;
   color: #4a1d96;
-font-size: 4rem !important;
+  font-size: 4rem !important;
   margin: 40px 0;
   letter-spacing: 4px;
   font-weight: 700;
   text-shadow: 1px 1px 3px rgba(139, 92, 246, 0.2);
 }
 
+/* Cocktail card grid layout */
 .cocktail-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -43,6 +44,7 @@ font-size: 4rem !important;
   padding: 20px 0;
 }
 
+/* Individual cocktail card with glassmorphism effect */
 .cocktail-card {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
@@ -104,12 +106,14 @@ font-size: 4rem !important;
   text-decoration: none;
 }
 
-.detail-card img {
-  width: 300px;
-  border-radius: 12px;
-  margin-bottom: 20px;
+/* Button wrapper to place Details and Delete side by side */
+.card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
 }
 
+/* Detail page card */
 .detail-card {
   background: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(12px);
@@ -134,10 +138,21 @@ font-size: 4rem !important;
   color: #7c3aed;
 }
 
-.Footer {
-  text-align: center;
-  padding: 20px;
-  color: #7c3aed;
+.detail-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.ingredients-title {
+  font-size: 1.3rem;
+  color: #4a1d96;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #a855f7;
+  padding-bottom: 5px;
 }
 
 .back-button {
@@ -154,29 +169,6 @@ font-size: 4rem !important;
 .back-button:hover {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
   transform: translateY(-2px);
-}
-
-.card-buttons {
-  display: flex;
-  gap: 10px;
-  margin-top: 12px;
-}
-
-.ingredients-title {
-  font-size: 1.3rem;
-  color: #4a1d96;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  border-bottom: 2px solid #a855f7;
-  padding-bottom: 5px;
-}
-
-.detail-card img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 15px;
 }
 
 .surpriseButton {
@@ -197,10 +189,10 @@ font-size: 4rem !important;
   transform: translateY(-2px);
 }
 
+/* Login button and user avatar in header */
 .login-button {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(139, 92, 246, 0.4);
+  border: 1px solid #7c3aed;
   color: #4a1d96;
   border-radius: 8px;
   padding: 8px 20px;
@@ -208,10 +200,11 @@ font-size: 4rem !important;
   transition: all 0.3s ease;
 }
 
-.login-button {
-  background: rgba(139, 92, 246, 0.4);
-  border: 1px solid #7c3aed;
+.login-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 15px rgba(167, 139, 250, 0.4);
 }
+
 .user-avatar {
   width: 100px;
   height: 100px;
@@ -227,6 +220,7 @@ font-size: 4rem !important;
   transform: scale(1.1);
 }
 
+/* Submit button inside login modal */
 .modal-submit-button {
   background: linear-gradient(135deg, #a855f7, #7c3aed);
   color: white;
@@ -242,4 +236,10 @@ font-size: 4rem !important;
 .modal-submit-button:hover {
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
   transform: translateY(-2px);
+}
+
+.Footer {
+  text-align: center;
+  padding: 20px;
+  color: #7c3aed;
 }
