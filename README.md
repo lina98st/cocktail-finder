@@ -12,12 +12,13 @@ On the homepage you see 6 cocktails. You can click on any card to see the full r
 
 ## Features
 
-- Browse 6 cocktails on the homepage
+- Search cocktails by name via REST API
+- Filter cocktails by category
+- Detail view with dynamic ingredient parsing and preparation instructions
 - Surprise Me button to discover a random cocktail
-- Detail view with ingredients and preparation instructions
-- Delete cocktails you don't like
-- Login form with validation
-- Elegant pastel design with smooth animations and glassmorphism cards
+- Delete cocktails from the list
+- Login form with client side validation using Formik
+- Glassmorphism UI with animated gradient background
 - Responsive layout
 
 ## Technologies
