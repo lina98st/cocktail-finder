@@ -2,17 +2,21 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { COCKTAILS } from '../shared/COCKTAILS';
 import CocktailList from '../components/CocktailList';
+import FilterOptions from '../components/FilterOptions';
 
 const HomePage = () => {
   const [cocktails, setCocktails] = useState(COCKTAILS);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [activeCategory, setActiveCategory] = useState('All');
 
   useEffect(() => {
   fetchCocktail();
   }, []);
 
 async function fetchCocktail() {
+  if (!searchTerm) return;
   try {
-    let response = await fetch('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita');
+let response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`);
     let data = await response.json();
     console.log(data);
     setCocktails(data.drinks);
@@ -37,11 +41,24 @@ async function fetchRandomCocktail() {
   }
 }
 
+const filteredCocktails = activeCategory === 'All' 
+    ? cocktails 
+    : cocktails.filter((cocktail) => cocktail.strCategory === activeCategory);
+
 
 return (
   <> 
+      <input 
+      className="searchInput"
+      type="text" 
+      placeholder="Search cocktails..." 
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+      />
+          <button className='searchButton' onClick={() => fetchCocktail()}>Search</button>
     <button className='surpriseButton' onClick={() => fetchRandomCocktail()}>Surprise Cocktail</button>
-    <CocktailList cocktails={cocktails} deleteCocktail={deleteCocktail}/>
+    <FilterOptions onFilterChange={(category) => setActiveCategory(category)} />
+    <CocktailList cocktails={filteredCocktails} deleteCocktail={deleteCocktail}/>
   </>
 )
 }
