@@ -6,9 +6,7 @@
 
 ## About
 
-CocktailFinder is a cocktail discovery app built with React. It helps you explore the world of cocktails, find new drinks to try and learn how to make them. Whether you are looking for something classic or want to be surprised, CocktailFinder has you covered.
-
-On the homepage you see 6 cocktails. You can click on any card to see the full recipe with ingredients and preparation instructions. Not a fan of a cocktail? Just delete it. Want to discover something new? Hit the Surprise Me button and a new random cocktail will appear.
+CocktailFinder is a cocktail discovery app built with React. It integrates the TheCocktailDB REST API to let users search, filter by category, and explore cocktails with full recipe details. Want to be surprised? Hit the Surprise Cocktail button and discover something new.
 
 ## Features
 
